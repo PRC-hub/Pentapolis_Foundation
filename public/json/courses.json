@@ -1,0 +1,76 @@
+{
+  "course": [
+    {
+      "title": "Agriculture",
+      "description": "Master Python programming and kickstart your coding journey.",
+      "image": "images/courses/img1.jpeg",
+      "badge": "New",
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Apparel",
+      "description": "Learn web development with HTML, CSS, and JavaScript.",
+      "image": "images/courses/img2.jpeg",
+      "badge": "Popular",
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Automotive",
+      "description": "Build stunning projects with React.js and modern frameworks.",
+      "image": "images/courses/img3.jpeg",
+      "badge": null,
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Beauty and Wellness",
+      "description": "Explore the world of Data Science and Machine Learning.",
+      "image": "images/courses/img4.jpeg",
+      "badge": null,
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "BFSI",
+      "description": "Learn UX/UI design principles to create intuitive designs.",
+      "image": "images/courses/img5.jpeg",
+      "badge": null,
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Capital Goods",
+      "description": "Discover digital marketing and SEO strategies with experts.",
+      "image": "images/courses/img6.jpeg",
+      "badge": "New",
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Construction",
+      "description": "Learn blockchain development and cryptocurrency basics.",
+      "image": "images/courses/img7.jpeg",
+      "badge": null,
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Electronic and Hardware",
+      "description": "Start your journey in cloud computing with AWS and explore more.",
+      "image": "images/courses/img8.jpeg",
+      "badge": null,
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    },
+    {
+      "title": "Healthcare",
+      "description": "Dive into AI-powered app development with GPT models.",
+      "image": "images/courses/img9.jpeg",
+      "badge": "Popular",
+      "buttonText": "Enroll Now",
+      "buttonLink": "#"
+    }
+  ]
+}

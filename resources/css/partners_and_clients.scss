@@ -1,0 +1,61 @@
+/* Apply background color to the entire body */
+.global_partners_and_clients{
+  .features3 {
+    padding: 50px 0;
+    background-color: rgb(244, 241, 39);
+   
+  }
+  .mbr-section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  .mbr-section-subtitle {
+    font-size: 1.2rem;
+    color: #5b5b58;
+    margin-bottom: 30px;
+  }
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .slider-track {
+    display: flex;
+    animation: slide 20s linear infinite;
+  }
+  .client-wrapper {
+    text-align: center;
+    /* border-radius: 10px; */
+    padding: 20px;
+    flex: 0 0 25%; /* Set card width to 25% */
+    box-sizing: border-box;
+  }
+  .wrap-img {
+    margin-bottom: 15px;
+  }
+  .clients-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .client-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  /* Sliding Animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Duplicate the track to ensure smooth sliding */
+  .slider-track::after {
+    content: "";
+    display: block;
+  }
+}

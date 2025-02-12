@@ -1,0 +1,42 @@
+.global_volunteer{
+    body {
+        background-color: #f4f4f9;
+      }
+      .form-header {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .form-section {
+        margin-bottom: 30px;
+      }
+      .form-section h5 {
+        color: #0056b3;
+      }
+      .btn-primary {
+        background-color: #0056b3;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #003d80;
+      }
+      select[multiple]:focus option:checked {
+        background-color: #0056b3;
+        color: white;
+      }
+      .logo {
+        max-width: 50px; /* Adjust the logo size */
+        margin-right: 10px;
+        margin-top: -35px;
+      }
+      .header-text {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the content horizontally */
+        text-align: center; /* Center the text */
+      }
+      .container {
+        max-width: 900px; /* Limit the width of the form */
+      }
+}

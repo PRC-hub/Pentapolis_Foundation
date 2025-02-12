@@ -1,0 +1,20 @@
+{
+    "terms": {
+      "title": "Terms and Conditions",
+      "welcome_message": "Welcome to [Pentapolis Foundation]! These terms and conditions outline the rules and regulations for the use of our website.",
+      "sections": [
+        {
+          "title": "1. Acceptance of Terms",
+          "content": "By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use our website if you do not accept all the terms and conditions stated on this page."
+        },
+        {
+          "title": "2. Cookies",
+          "content": "We employ the use of cookies. By using our website, you consent to the use of cookies in accordance with our privacy policy."
+        }
+      ],
+      "links": {
+        "accept": "Accept"
+      }
+    }
+  }
+  

@@ -1,0 +1,101 @@
+.global_signup_section {
+  .body_container {
+    background: radial-gradient(
+      circle,
+      rgba(255, 223, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.7) 80%
+    );
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .signup-container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+  }
+
+  .form-control {
+    height: 45px;
+    font-size: 14px;
+    padding-right: 40px; /* Ensure space for the icon */
+  }
+
+  .password-wrapper,
+  .otp-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  /* Responsive for small screens */
+  @media (max-width: 480px) {
+    .signup-container {
+      width: 90%;
+      padding: 20px;
+    }
+
+    .toggle-password {
+      font-size: 16px; /* Adjust icon size for small screens */
+      right: 8px; /* Adjust positioning */
+    }
+  }
+
+  .otp-box {
+    display: none; /* Hidden by default */
+  }
+
+  .terms-conditions {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    visibility:hidden; /* Hide without affecting layout */
+  }
+
+  .error-message.visible {
+    visibility: visible; /* Show when needed */
+  }
+
+  .suggest-password {
+    color: #007bff;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+
+  .resend-otp {
+    font-size: 13px;
+    color: #007bff;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 5px;
+  }
+
+  .resend-otp.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }
+}

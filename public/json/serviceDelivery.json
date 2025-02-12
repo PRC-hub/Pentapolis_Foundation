@@ -1,0 +1,35 @@
+{
+    "sections": [
+      {
+        "image": "images/community/service_delivery1.jpg",
+        "title": "Service Delivery",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic rem sapiente amet magni veniam molestias vitae officiis, soluta dolorum."
+      },
+      {
+        "image": "images/community/service_delivery2.jpg",
+        "title": "Capacity Building",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloremque accusantium debitis dolores, corrupti amet! Soluta repudiandae dolorem atque. Non aliquid nisi nulla eum nihil?"
+      },
+      {
+        "image": "images/community/service_delivery3.jpg",
+        "title": "Humanitarian Assistance",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In assumenda commodi minus nihil! Sapiente eos rem repellat quia aut dolores temporibus, itaque totam enim explicabo."
+      },
+      {
+        "image": "images/community/service_delivery4.jpg",
+        "title": "Community Engagement",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque magnam consectetur ipsum? Officiis corporis cumque, facilis quod ratione quibusdam praesentium doloribus aliquam enim sunt rem."
+      },
+      {
+        "image": "images/community/service_delivery5.jpg",
+        "title": "Sustainable Development",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis numquam asperiores, culpa quae libero perferendis animi amet? Enim, in. Optio eius minima at illum? Ipsum."
+      },
+      {
+        "image": "images/community/service_delivery6.jpg",
+        "title": "Future Goals",
+        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, obcaecati! Minus excepturi deleniti recusandae, iure harum quae totam rem doloremque vitae, vero consequatur, repudiandae velit."
+      }
+    ]
+  }
+  

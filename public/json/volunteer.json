@@ -1,0 +1,18 @@
+{
+    "volunteerData": {
+        "+91": "India",
+        "+1": "USA/Canada",
+        "+44": "UK",
+        "+61": "Australia",
+        "+81": "Japan",
+        "+49": "Germany"
+    },
+    "titles": ["Mr.", "Ms.", "Mrs.", "Dr."],
+    "volunteer_areas": [
+        "Health",
+        "Education",
+        "Community Development",
+        "Fundraising",
+        "Event Planning"
+    ]
+}

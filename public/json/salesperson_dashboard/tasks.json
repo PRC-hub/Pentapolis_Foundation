@@ -1,0 +1,26 @@
+{
+    "tasks": [
+      {
+        "title": "Call 50 Clients",
+        "target": "50 Calls",
+        "status": "Pending",
+        "status_class": "warning",
+        "deadline": "Feb 10, 2025"
+      },
+      {
+        "title": "Close 5 Deals",
+        "target": "5 Sales",
+        "status": "Completed",
+        "status_class": "success",
+        "deadline": "Jan 30, 2025"
+      },
+      {
+        "title": "Follow up with 10 Leads",
+        "target": "10 Follow-ups",
+        "status": "Not Started",
+        "status_class": "danger",
+        "deadline": "Feb 5, 2025"
+      }
+    ]
+  }
+  

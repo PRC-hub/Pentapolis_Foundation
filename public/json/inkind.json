@@ -1,0 +1,41 @@
+{
+    "inKindData": {
+      "logo": "images/logo/PPF-LOGO.jpg",
+      "heartIcon": "<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' fill='currentColor' class='bi bi-heart-fill text-danger' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M8 1.314C3.562-3.248-7.534 4.735 8 15c15.534-10.265 4.438-18.248 0-13.686z'/></svg>",
+      "title": "In-Kind Donation Form",
+      "labels": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "address": "Address",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "description": "Description of Donation",
+        "estimatedValue": "Donor's Estimated Value of Donation",
+        "date": "Date of Donation",
+        "category": "Category of Donation",
+        "anonymousDonation": "I want this donation to remain anonymous"
+      },
+      "countries": [
+        { "value": "Romania", "name": "Romania", "selected": true },
+        { "value": "United States", "name": "United States", "selected": false },
+        { "value": "Canada", "name": "Canada", "selected": false },
+        { "value": "India", "name": "India", "selected": false },
+        { "value": "Other", "name": "Other", "selected": false }
+      ],
+      "phoneCodes": [
+        { "value": "+40", "label": "+40 (Romania)", "selected": true },
+        { "value": "+1", "label": "+1 (United States/Canada)", "selected": false },
+        { "value": "+44", "label": "+44 (United Kingdom)", "selected": false },
+        { "value": "+91", "label": "+91 (India)", "selected": false },
+        { "value": "other", "label": "Other", "selected": false }
+      ],
+      "categories": [
+        { "value": "Clothing", "label": "Clothing" },
+        { "value": "Food", "label": "Food" },
+        { "value": "Electronics", "label": "Electronics" },
+        { "value": "Other", "label": "Other" }
+      ],
+      "submitText": "Submit"
+    }
+  }
+  

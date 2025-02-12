@@ -1,0 +1,78 @@
+{
+  "header": {
+    "logo": {
+      "src": "images/logo/PPF-LOGO.jpg",
+      "alt": "Pentapolis Foundation Logo"
+    },
+    "navMenu": [
+      {
+        "name": "Home",
+        "url": "/",
+        "icon": "fas fa-home"
+      },
+      {
+        "name": "My Talent & Workforce",
+        "url": "#my-talent-workforce",
+        "icon": "fas fa-briefcase"
+      },
+      {
+        "name": "Goals",
+        "icon": "fas fa-bullseye",
+        "dropdown": [
+          {
+            "name": "Capacity Building",
+            "url": "/capacity-building",
+            "icon": "fas fa-graduation-cap"
+          },
+          {
+            "name": "Humanitarian Assistance",
+            "url": "/humanitarian-assistance",
+            "icon": "fas fa-hand-holding-heart"
+          },
+          {
+            "name": "Community Engagement",
+            "url": "/community-engagement",
+            "icon": "fas fa-users"
+          }
+        ]
+      },
+      {
+        "name": "Give",
+        "icon": "fas fa-hand-holding-usd",
+        "dropdown": [
+          {
+            "name": "Monetary Donation",
+            "url": "/monetary-donation",
+            "icon": "fas fa-dollar-sign"
+          },
+          {
+            "name": "In-Kind Donation",
+            "url": "/inkind",
+            "icon": "fas fa-box"
+          },
+          {
+            "name": "Volunteering",
+            "url": "/volunteering",
+            "icon": "fas fa-hands-helping"
+          }
+        ]
+      },
+      {
+        "name": "About Us",
+        "icon": "fas fa-info-circle",
+        "dropdown": [
+          {
+            "name": "Know Us",
+            "url": "/about-us",
+            "icon": "fas fa-user"
+          },
+          {
+            "name": "Contact Us",
+            "url": "/contact",
+            "icon": "fas fa-envelope"
+          }
+        ]
+      }
+    ]
+  }
+}

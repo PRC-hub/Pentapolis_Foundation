@@ -1,0 +1,94 @@
+{
+  "hero_section": {
+    "title": "Welcome to Pentapolis Foundation",
+    "subheading": "Charging towards forging the next generation of nation-builders for India.",
+    "background_image": "images/aboutUs/img1.jpeg"
+  },
+  "about_section": {
+    "title": "About Us",
+    "text": [
+      {
+        "paragraph": "An impact-driven, result-oriented nonprofit servicing indigenous peoples and individuals from lower socioeconomic groups. Dedicated to a common cause, we iterate virtues throughout the cycle: <strong>HUMANITY, RESPECTABILITY, DIGNITY, TENACITY, PERSEVERANCE.</strong>"
+      },
+      {
+        "paragraph": "We believe imparting the right education enables individuals to achieve full and productive employment through our employer network."
+      }
+    ],
+    "image": "images/aboutUs/sucessPeople.jpeg"
+  },
+  "what_we_do_section": {
+    "title": "What We Do",
+    "subheading": "At Pentapolis Foundation, we are passionate about empowering individuals through education and skills training, with a focus on building sustainable livelihoods and transforming communities. Our carefully crafted programs aim to bridge the skills gap, increase employability, and foster entrepreneurship among underserved groups.",
+    "core_focus": [
+      {
+        "title": "1. DDU-GKY (Deen Dayal Upadhyaya Grameen Kaushalya Yojana)",
+        "description": "We empower youth from rural India by offering specialized skill development training to help them secure stable and sustainable employment. Through this initiative, we equip young individuals with the tools needed to excel in their chosen careers, driving growth and prosperity in rural communities."
+      },
+      {
+        "title": "2. Green Skill Development Programme",
+        "description": "As the world turns towards sustainability, we are at the forefront of green skill development. Our program trains individuals in sectors like renewable energy, environmental conservation, and sustainable farming practices, equipping them for the jobs of tomorrow. Together, we are building a greener, more eco-conscious future."
+      },
+      {
+        "title": "3. Pradhan Mantri Kaushal Kendra (PMKK)",
+        "description": "In collaboration with the government, we offer cutting-edge skill development programs at Pradhan Mantri Kaushal Kendras, enabling individuals from both urban and rural areas to gain industry-relevant skills. This initiative bridges the gap between education and employment, ensuring that every individual has the opportunity to thrive."
+      },
+      {
+        "title": "4. Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+        "description": "Our involvement in PMKVY focuses on providing vocational training and certification across a wide range of industries. By offering opportunities for skill enhancement, we help individuals increase their employability and open doors to better job prospects."
+      },
+      {
+        "title": "5. Financial Assistance for Skill Training of Persons with Disabilities",
+        "description": "We believe in inclusivity. Our program offers financial support for individuals with disabilities to receive specialized training, empowering them with the skills to join the workforce, enhance their independence, and contribute to society."
+      },
+      {
+        "title": "6. National Apprenticeship Promotion Scheme (NAPS)",
+        "description": "NAPS provides on-the-job training opportunities that complement academic knowledge with hands-on experience. This program helps individuals gain practical skills in various sectors, making them ready for real-world challenges."
+      },
+      {
+        "title": "7. National Apprenticeship Training Scheme (NATS)",
+        "description": "Through NATS, we offer comprehensive training in technical fields, giving individuals the expertise they need to thrive in highly specialized industries. This initiative focuses on building strong technical skills, preparing participants for a wide range of career opportunities."
+      }
+    ],
+    "final_paragraph": "We believe that skill development is not just about training—it's about creating opportunities for meaningful change. Our programs are designed to not only enhance technical capabilities but also nurture soft skills that are critical for success in the modern workforce. By providing holistic training, mentorship, and support, we ensure that every participant is well-equipped to face the challenges of the evolving job market."
+  },
+  "how_we_do_it_section": {
+    "title": "How We Do It",
+    "content": [
+      {
+        "paragraph": "With our rapid growth and extensive geographical spread, we have transitioned from traditional classroom training to technology-enabled, cohort-based live online training as well as self-paced on-demand learning. This approach ensures the constant education and growth of our past and present students."
+      },
+      {
+        "paragraph": "Through digital transformation, we are charging towards forging the next generation of nation-builders for India."
+      }
+    ]
+  },
+  "meet_the_team_section": {
+    "title": "Meet The Team",
+    "subheading": "Pentapolis Foundation brings together sector and social change experts from across India. Our team includes creators, trainers, and leaders passionate about raising role models from within the community.",
+    "team_members": [
+      {
+        "name": "John Doe",
+        "position": "CEO & Founder",
+        "image": "images/aboutUs/sucessPeople1.jpeg"
+      },
+      {
+        "name": "Jane Smith",
+        "position": "Marketing Head",
+        "image": "images/aboutUs/sucessPeople2.jpeg"
+      },
+      {
+        "name": "Michael Brown",
+        "position": "Technical Lead",
+        "image": "images/aboutUs/sucessPeople3.jpeg"
+      }
+    ]
+  },
+  "where_we_work_section": {
+    "title": "Where We Work",
+    "content": "We operate in South India, encompassing the states of Andhra Pradesh, Karnataka, Kerala, Tamil Nadu, and Telangana, as well as the union territories of Andaman and Nicobar, Lakshadweep, and Puducherry. This region constitutes 19.31% of India's area."
+  },
+  "location_section": {
+    "title": "Our Location",
+    "map_iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094125!2d144.95373531565862!3d-37.81720974202188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776e6db5d6b0f4!2sVictoria!5e0!3m2!1sen!2sau!4v1637652270571!5m2!1sen!2sau"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "about": "Pentapolis Foundation is dedicated to creating a better future through innovation and community support.",
+  "links": [
+      { "title": "About Us", "url": "/about-us" },
+      { "title": "Privacy Policy", "url": "/privacy-policy" },
+      { "title": "Help", "url": "/help-us" }
+  ],
+  "contact": {
+      "address": "Narayanaswamy Nagar, Thandalam, Chennai-602105",
+      "email": "abc@pentapolisfoundation.com",
+      "phone": "+033-2329907"
+  }
+}

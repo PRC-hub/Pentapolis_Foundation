@@ -1,0 +1,102 @@
+/* General Styles */
+.global_courses{
+  .carousel-item {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .card {
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    background-color: #000;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .badge-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffc107;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .badge-popular {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #000;
+    color: #ffc107;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .carousel {
+    padding-bottom: 20px;
+  }
+  
+  .card-body {
+    box-sizing: 10px 10px 5px black;
+  }
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .carousel-item .row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .carousel-item .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      scroll-snap-align: start;
+    }
+  }
+  
+  /* See More button */
+  .learn-more-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: black;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically (if needed) */
+  }
+  .learn-more-btn:hover {
+    background-color: rgb(244, 241, 39);
+    color: black;
+    transform: scale(1.1);
+  }
+}

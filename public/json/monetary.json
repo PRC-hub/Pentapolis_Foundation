@@ -1,0 +1,33 @@
+{
+    "monetaryData": {
+      "logo": "images/logo/PPF-LOGO.jpg",
+      "title": "Donate to Our Charity",
+      "labels": {
+        "fullName": "Full Name",
+        "address": "Address",
+        "phone": "Phone Number",
+        "email": "Email Address",
+        "amount": "Donation Amount",
+        "paymentMethod": "Payment Method",
+        "cardDetails": "Card Details",
+        "cardNumber": "Card Number",
+        "cardHolder": "Card Holder Name",
+        "expiryDate": "Expiry Date",
+        "ccv": "CCV",
+        "upiDetails": "UPI Details",
+        "upiId": "UPI ID",
+        "upiScanner": "Upload UPI Scanner",
+        "bankDetails": "Bank Transfer Details",
+        "accountHolder": "Account Holder Name",
+        "accountNumber": "Account Number",
+        "confirmAccountNumber": "Confirm Account Number",
+        "ifscCode": "IFSC Code",
+        "submitText": "Donate Now"
+      },
+      "paymentMethods": [
+        { "value": "online", "label": "Online Payment" },
+        { "value": "offline", "label": "Offline Payment" }
+      ]
+    }
+  }
+  

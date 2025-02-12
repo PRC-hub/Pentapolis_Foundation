@@ -1,0 +1,59 @@
+{
+    "blogs": [
+      {
+        "title": "Learn How to Make a Website",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 7,
+        "comments": 3,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "title": "Learn How to Make a Blog",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 15,
+        "comments": 10,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "title": "Learn How to Make an Ecommerce Website",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 21,
+        "comments": 12,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "title": "Learn SEO Basics",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 10,
+        "comments": 5,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "title": "Learn Graphic Design",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 25,
+        "comments": 18,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "title": "Learn Digital Marketing",
+        "date": "September 24, 2018",
+        "author": "Admin",
+        "image": "images/blog/blog1img.webp",
+        "likes": 30,
+        "comments": 20,
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      }
+    ]
+  }
+  

@@ -1,0 +1,12 @@
+{
+    "signup": {
+      "title": "Signup",
+      "emailPlaceholder": "Email",
+      "passwordPlaceholder": "Create password",
+      "confirmPasswordPlaceholder": "Confirm password",
+      "signupButton": "Signup",
+      "loginText": "Already have an account?",
+      "loginLink": "Login"
+    }
+  }
+  

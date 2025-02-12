@@ -1,0 +1,49 @@
+{
+    "title": "Capacity Building",
+    "description": "",
+    "cards": [
+      {
+        "image": "images/capacity/capacityBuildingSection1.jpg",
+        "altText": "Learn How to Make a Website",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn How to Make a Website",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "image": "images/capacity/capacityBuildingSection2.jpg",
+        "altText": "Learn How to Make a Blog",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn How to Make a Blog",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "image": "images/capacity/capacityBuildingSection3.webp",
+        "altText": "Learn How to Make an Ecommerce Website",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn How to Make an Ecommerce Website",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "image": "images/capacity/capacityBuildingSection4.jpg",
+        "altText": "Learn SEO Basics",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn SEO Basics",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "image": "images/capacity/capacityBuildingSection5.webp",
+        "altText": "Learn Graphic Design",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn Graphic Design",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      },
+      {
+        "image": "images/capacity/capacityBuildingSection6.jpg",
+        "altText": "Learn Digital Marketing",
+        "date": "By Admin | September 24, 2018",
+        "title": "Learn Digital Marketing",
+        "description": "Like this video and ask your questions in the comment section. Don't forget to subscribe!"
+      }
+    ]
+  }
+  

@@ -1,0 +1,60 @@
+.global_donation_section{
+.hero-section {
+    background-image: url("/assets/overviewSection3.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  .donation-card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .donation-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-donate {
+    background-color: rgb(244,241,39);
+    color: #000000;
+  }
+  
+  .btn-donate:hover {
+    background-color: #000000;
+    color:#fff;
+  }
+  
+  
+  .donation-card .card-body {
+    text-align: center;
+  }
+  
+  .donation-card h5 {
+    font-size: 1.25rem;
+    margin-top: 15px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+  }
+}

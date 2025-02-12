@@ -1,0 +1,128 @@
+.global_login{
+.body_login {
+    background: radial-gradient(
+        circle,
+        rgba(255, 223, 0, 0.5) 20%,
+        rgba(0, 0, 0, 0.7) 80%
+      );
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.box-area {
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-box {
+    background-color: #f9f9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-box {
+    padding: 2rem;
+}
+
+.btn-group .btn {
+    flex: 1;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+// .btn-group button.active {
+//     background-color: #000; /* Black background when active */
+//     color: #ffdd00; /* Yellow text when active */
+//     border-color: #ffdd00; /* Yellow border when active */
+// }
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+.forgot a {
+    color: #ffdd00; /* Yellow color for links */
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+.featured-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+// .btn-group button:hover {
+//     transform: scale(1.05);
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     background-color: #000; /* Change to black on hover */
+//     color: #ffdd00; /* Change text to yellow on hover */
+// }
+
+// /* Login button style */
+// .btn-primary {
+//     background-color: #ffdd00; /* Yellow background */
+//     color: #000; /* Black text */
+//     border: none;
+// }
+
+// .btn-primary:hover {
+//     background-color: #000; /* Black background on hover */
+//     color: #ffdd00; /* Yellow text on hover */
+//     border: 2px solid #ffdd00; /* Yellow border on hover */
+// }
+
+/* Header Text */
+.header-text h2 {
+    color: #000; /* Change to black */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-text p {
+    color: #000; /* Change to black */
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .box-area {
+      flex-direction: column;
+    }
+    .left-box {
+      order: 1;
+    }
+    .right-box {
+      order: 2;
+    }
+  }
+
+}

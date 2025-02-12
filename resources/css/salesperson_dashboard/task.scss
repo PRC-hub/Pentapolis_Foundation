@@ -1,0 +1,122 @@
+.global_salesperson_task {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.back-navigation {
+    margin-bottom: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.task-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.task-header {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+.task-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.task-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #495057;
+}
+.task-details {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #6c757d;
+}
+.badge {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.badge-warning {
+    background-color: #f39c12;
+}
+.badge-success {
+    background-color: #28a745;
+}
+.badge-danger {
+    background-color: #dc3545;
+}
+.deadline {
+    font-size: 14px;
+    color: #007bff;
+}
+.chart-container {
+    width: 100%;
+    margin-top: 10px;
+    height: 250px;
+   
+}
+.search-box {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .search-box input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 200px;
+    height:20px;
+  }
+
+  .search-box button {
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .search-box.active {
+    display: flex;
+  }
+
+}

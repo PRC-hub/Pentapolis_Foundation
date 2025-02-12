@@ -1,0 +1,57 @@
+{
+  "featureSection": {
+    "carousel": {
+      "id": "carouselExampleCaptions",
+      "indicators": [
+        { "slideTo": 0, "class": "active", "ariaLabel": "Slide 1" },
+        { "slideTo": 1, "ariaLabel": "Slide 2" },
+        { "slideTo": 2, "ariaLabel": "Slide 3" }
+      ],
+      "slides": [
+        {
+          "image": "images/feature/featured-section1.webp",
+          "altText": "Pentapolis Foundation Image 1",
+          "caption": {
+            "title": "Pentapolis Foundation",
+            "subtitle": "Empowering Communities Through Services and Sustainable Development",
+            "button": {
+              "text": "Get Involved",
+              "classes": "pf-btn font-weight-bold animate_zoomIn",
+              "link": "/login"
+            }
+          }
+        },
+        {
+          "image": "images/feature/featured-section2.jpeg",
+          "altText": "Pentapolis Foundation Image 2",
+          "caption": {
+            "title": "Pentapolis Foundation",
+            "subtitle": "Empowering Communities Through Services and Sustainable Development",
+            "button": {
+              "text": "Get Involved",
+              "classes": "pf-btn font-weight-bold animate_zoomIn",
+              "link": "/login"
+            }
+          }
+        },
+        {
+          "image": "images/feature/featured-section3.jpg",
+          "altText": "Pentapolis Foundation Image 3",
+          "caption": {
+            "title": "Pentapolis Foundation",
+            "subtitle": "Empowering Communities Through Services and Sustainable Development",
+            "button": {
+              "text": "Get Involved",
+              "classes": "pf-btn font-weight-bold animate_zoomIn",
+              "link": "/login"
+            }
+          }
+        }
+      ],
+      "controls": {
+        "prev": { "target": "#carouselExampleCaptions", "label": "Previous" },
+        "next": { "target": "#carouselExampleCaptions", "label": "Next" }
+      }
+    }
+  }
+}

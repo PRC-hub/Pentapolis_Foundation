@@ -1,0 +1,21 @@
+.global_profileDashboard{
+    /* Cross Button Animation */
+.btn-close {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #000; /* Default color */
+}
+
+/* Hover effect */
+.btn-close:hover {
+    transform: rotate(45deg) scale(1.2); /* Rotate and scale the button */
+    color: #f00; /* Change color to red on hover */
+}
+
+/* Focus effect */
+.btn-close:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+}

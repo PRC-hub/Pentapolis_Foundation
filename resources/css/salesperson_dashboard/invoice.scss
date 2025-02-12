@@ -1,0 +1,19 @@
+.global_dashboard_invoice{
+    .back-navigation {
+        margin-bottom: 20px;
+    }
+    
+    .back-button {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .back-button:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+}

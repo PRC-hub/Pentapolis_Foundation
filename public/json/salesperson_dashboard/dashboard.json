@@ -1,0 +1,41 @@
+{
+    "dashboard": {
+      "currentTarget": {
+        "agriculture": 60,
+        "medical": 5
+      },
+      "previousTarget": {
+        "agriculture": 60,
+        "medical": 100
+      },
+      "overallTarget": {
+        "agriculture": 120,
+        "medical": 105
+      },
+      "salesStatistics": {
+        "labels": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG"],
+        "target": [12, 19, 3, 5, 2, 3, 7, 10],
+        "achieved": [2, 3, 20, 5, 1, 4, 9, 12]
+      },
+      "studentEnrollment": {
+        "enrolled": 20,
+        "notEnrolled": 80
+      },
+      "sectorEngagement": {
+        "engaged": 40,
+        "notEngaged": 60
+      },
+      "salesFunnel": {
+        "labels": ["Prospecting", "Qualified", "Proposal", "Negotiation", "Closed Won", "Closed Lost"],
+        "data": [50, 30, 20, 10, 6, 5]
+      },
+      "studentProgramCompletion": {
+        "completed": 85,
+        "total": 100
+      },
+      "invoiceSubmission": {
+        "submitted": 25,
+        "total": 100
+      }
+    }
+  }
