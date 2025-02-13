@@ -6,7 +6,7 @@
             <img src="images/logo/PPF-LOGO.jpg" alt="Logo">
             <span>Pentapolis Foundation</span>
         </div>
-        <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+        <a href="/profile-Dashboard"><i class="fa-solid fa-user"></i> Profile</a>
         <a href="/task"><i class="fa-solid fa-list-check"></i> Task</a>
         <a href="/timesheet"><i class="fa-solid fa-hourglass-half"></i> Timesheet</a>
         <a href="#"><i class="fa-solid fa-map-location-dot"></i> Geo Tracking</a>
@@ -15,7 +15,7 @@
         <a href="/invoices"><i class="fa-solid fa-receipt"></i> Upload Invoice</a>
         <div class="sidebar-footer">
             <a href="/help-center"><i class="fa-solid fa-circle-question"></i> Help Center</a>
-            <a href="/"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            <a href="/"><i class="fas fa-home"></i> Home</a>
         </div>
     </div>
 

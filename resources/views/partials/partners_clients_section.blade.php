@@ -1,25 +1,45 @@
 <div class="global_partners_and_clients">
-<section class="features3 cid-qKT6knwV2G" id="clients2-2p">
-    <div class="container mb-4">
-        <div class="media-container-row">
-            <div class="col-12 align-center">
-                <h2 class="mbr-section-title text-center pb-2 mbr-fonts-style display-2">Our Partners</h2>
-                <h3 class="mbr-section-subtitle mbr-light mbr-fonts-style display-7"></h3>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="slider-container">
-            <div class="slider-track">
-                @foreach ($partnerData as $partner)
-                    <div class="client-wrapper">
-                        <div class="wrap-img">
-                            <img src="{{ $partner['src'] }}" class="img-responsive clients-img" alt="{{ $partner['alt'] }}" />
-                        </div>
+        <section class="features3" id="clients2-2p">
+            <div class="container mb-4">
+                <div class="media-container-row">
+                    <div class="col-12 text-center">
+                        <h2 class="mbr-section-title">{{ $partnerData['title'] ?? 'Our Partners' }}</h2>
                     </div>
-                @endforeach
+                </div>
             </div>
-        </div>
+
+            <div class="container">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        @foreach($partnerData['partners'] as $partner)
+                            @if(isset($partner['image']) && isset($partner['alt']))
+                                <div class="client-wrapper">
+                                    <img src="{{ asset($partner['image']) }}" class="clients-img" alt="{{ $partner['alt'] }}" />
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="{{ $partnerData['see_more_link'] ?? '#' }}" class="btn btn-custom">See All</a>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
-</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  const track = document.querySelector(".slider-track");
+  const slides = Array.from(track.children);
+
+  // Duplicate slides for seamless loop
+  slides.forEach((slide) => {
+    let clone = slide.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  // Set track width based on number of images to adjust smoothness
+  const totalSlides = slides.length;
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.width = `${totalSlides * slideWidth * 2}px`; // Multiply by 2 for cloned slides
+});
+</script>

@@ -16,6 +16,7 @@ use App\Http\Controllers\InkindController;
 use App\Http\Controllers\MonetaryDonationController;
 use App\Http\Controllers\VolunteerController;
 use App\Http\Controllers\SignUpController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\OtpController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TermsController;
@@ -29,9 +30,12 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\HelpCenterController;
 use App\Http\Controllers\GeoTrackingController;
 use Illuminate\Support\Facades\Config;
+use App\Http\Controllers\Partners_SeeMoreController;
+use App\Http\Controllers\ProfileDashboardController;
 
 
 
+Route::get('/partners-clients/see-more',[Partners_SeeMoreController::class , 'partnersSeeMore']);
 
 Route::get('/history', [TimesheetController::class, 'history'])->name('history');
 Route::post('/move-to-history', [TimesheetController::class, 'moveToHistory'])->name('moveToHistory');
@@ -67,7 +71,9 @@ Route::get('/task', [TaskController::class, 'task'])->name('task');
 
 
 
-
+Route::middleware(['auth'])->group(function () {
+    Route::get('/profile-Dashboard', [ProfileDashboardController::class, 'dashboard'])->name('profile');
+});
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'index'])->name('profile');

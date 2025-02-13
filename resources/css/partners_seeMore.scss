@@ -1,0 +1,47 @@
+.global_partner_seeMore{
+    /* Basic Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  /* Container */
+  .container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: black;
+    overflow-x: hidden;
+  }
+  .title {
+    color: rgb(244, 241, 39);
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  /* Sector Grid */
+  .sector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 60px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .sector {
+    background: linear-gradient(to right, rgb(243, 243, 42), rgb(223, 228, 161));
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    cursor: pointer;
+    text-align: center;
+  }
+  .sector:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 10px rgba(249, 247, 84, 0.911);
+  }
+  .sector img {
+    width: 120px;
+    height: 100px;
+  }
+}

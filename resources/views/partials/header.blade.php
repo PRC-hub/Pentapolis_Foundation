@@ -3,11 +3,12 @@
     <div class="container-fluid">
       <!-- Brand Logo -->
       <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="{{ asset($header['header']['logo']['src']) }}" alt="{{ $header['header']['logo']['alt'] }}" height="40" />
+        <img src="{{ asset($header['header']['logo']['src']) }}" 
+             alt="{{ $header['header']['logo']['alt'] }}" height="40" />
         <span class="ms-2 nv-logo-title">Pentapolis Foundation</span>
       </a>
 
-      <!-- Hamburger Menu Button (manual toggle) -->
+      <!-- Hamburger Menu Button -->
       <button id="navbar-toggler" class="navbar-toggler border-0" aria-label="Toggle navigation">
         <span class="burger-menu">
           <i class="fas fa-bars" id="hamburger"></i>
@@ -18,6 +19,22 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+        @auth
+            <li class="nav-item dropdown d-lg-none">
+              <a class="nav-link dropdown-toggle" href="#" id="mobileProfileDropdown"
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user"></i> Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mobileProfileDropdown">
+                <li>
+                  <a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user-circle"></i> Profile</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                </li>
+              </ul>
+            </li>
+          @endauth
           @foreach ($header['header']['navMenu'] as $menu)
             @if (isset($menu['dropdown']))
               <!-- Dropdown Menu -->
@@ -45,11 +62,19 @@
               </li>
             @endif
           @endforeach
+          @auth
+          <li class="nav-item d-lg-none">
+              <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <button type="submit" class="nav-link btn btn-link"><i class="fa fa-sign-out-alt"></i> Logout</button>
+              </form>
+            </li>
+          @endauth
         </ul>
-
-        <!-- Conditional Login/Profile Button -->
-        @auth
-          <div class="d-flex align-items-center ms-lg-3">
+      
+        <!-- Desktop View Profile/Login -->
+        <div class="d-none d-lg-flex align-items-center ms-lg-3">
+          @auth
             <div class="dropdown">
               <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center profile-btn"
                       type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,37 +87,37 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
                 <li>
-                  <a class="dropdown-item" href="/profile"><i class="fa fa-user-circle"></i> Profile</a>
+                  <a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user-circle"></i> Profile</a>
                 </li>
                 <li>
-                  <form action="{{ route('logout') }}" method="POST">
-                    @csrf
-                    <button type="submit" class="dropdown-item"><i class="fa fa-sign-out-alt"></i> Logout</button>
-                  </form>
-                </li>
+                  <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                </li>          
               </ul>
             </div>
-          </div>
-        @else
-          <div class="d-flex align-items-center ms-lg-3">
-            <a href="/login" class="nav-btn nav-btn-outline-primary me-2"><i class="fa fa-sign-in"></i> Login</a>
-          </div>
-        @endauth
+          @else
+            <a href="{{ route('login') }}" class="loginbtn nav-btn nav-btn-outline-primary me-2">
+              <i class="fa fa-sign-in"></i> Login
+            </a>
+          @endauth
+        </div>
       </div>
     </div>
   </nav>
 </div>
 
+
+
+
 <!-- Custom JavaScript -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     // --- Mobile Hamburger Toggle ---
-    var navbarNav    = document.getElementById("navbarNav");
+    var navbarNav     = document.getElementById("navbarNav");
     var navbarToggler = document.getElementById("navbar-toggler");
     var hamburger     = document.getElementById("hamburger");
     var closeIcon     = document.getElementById("close");
 
-    // Initialize Bootstrap's Collapse manually (disable auto-toggle)
+    // Initialize Bootstrap's Collapse manually
     var bsCollapse = new bootstrap.Collapse(navbarNav, { toggle: false });
 
     navbarToggler.addEventListener('click', function() {
@@ -109,35 +134,35 @@
       closeIcon.style.display = "none";
     });
 
-    // --- For small screens, remove Bootstrap's dropdown toggle attribute ---
-    // This prevents Bootstrap’s native dropdown handling from interfering.
+    // --- Initialize Bootstrap Dropdowns ---
+    var dropdownElements = document.querySelectorAll('.dropdown-toggle');
+    dropdownElements.forEach(function(dropdown) {
+      new bootstrap.Dropdown(dropdown);
+    });
+
+    // --- Mobile Dropdown Toggling ---
     if (window.innerWidth < 992) {
       document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
         toggle.removeAttribute('data-bs-toggle');
       });
-    }
 
-    // --- Mobile Dropdown Toggling via Event Delegation ---
-    document.addEventListener('click', function(e) {
-      if (window.innerWidth < 992) {
-        // Check if the click is on (or within) a dropdown toggle.
-        var toggleEl = e.target.closest('.dropdown-toggle');
-        if (toggleEl) {
-          e.preventDefault();
-          e.stopPropagation();
-          var dropdownMenu = toggleEl.parentElement.querySelector('.dropdown-menu');
-          if (dropdownMenu) {
-            dropdownMenu.classList.toggle('show');
-          }
-        } else {
-          // If the click is outside any dropdown, close all open dropdown menus.
-          if (!e.target.closest('.dropdown')) {
+      document.addEventListener('click', function(e) {
+        if (window.innerWidth < 992) {
+          var toggleEl = e.target.closest('.dropdown-toggle');
+          if (toggleEl) {
+            e.preventDefault();
+            e.stopPropagation();
+            var dropdownMenu = toggleEl.parentElement.querySelector('.dropdown-menu');
+            if (dropdownMenu) {
+              dropdownMenu.classList.toggle('show');
+            }
+          } else {
             document.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
               menu.classList.remove('show');
             });
           }
         }
-      }
-    });
+      });
+    }
   });
 </script>

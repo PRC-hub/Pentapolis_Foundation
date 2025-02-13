@@ -2,60 +2,98 @@
 .global_partners_and_clients{
   .features3 {
     padding: 50px 0;
-    background-color: rgb(244, 241, 39);
-   
+    background-color: #000000;
   }
+  
   .mbr-section-title {
     font-size: 2.5rem;
-    color: #333;
+    color: rgb(244, 241, 39);
     font-weight: bold;
   }
-  .mbr-section-subtitle {
-    font-size: 1.2rem;
-    color: #5b5b58;
-    margin-bottom: 30px;
-  }
+  
   .slider-container {
     overflow: hidden;
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
+  
   .slider-track {
     display: flex;
-    animation: slide 20s linear infinite;
+    gap: 20px;
+    animation: slide 120s linear infinite;
+    will-change: transform;
   }
+  
+  /* Client Image Styling */
   .client-wrapper {
-    text-align: center;
-    /* border-radius: 10px; */
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 241, 39);
     padding: 20px;
-    flex: 0 0 25%; /* Set card width to 25% */
-    box-sizing: border-box;
   }
-  .wrap-img {
-    margin-bottom: 15px;
-  }
+  
   .clients-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
   }
-  .client-name {
-    font-size: 1.2rem;
+  
+  /* Pause Animation on Hover & Pop Effect */
+  .slider-container:hover .slider-track {
+    animation-play-state: paused;
+  }
+  
+  .clients-img:hover {
+    transform: scale(1.3);
+  }
+  
+  /* See More Button */
+  .btn-custom {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #ffc107; /* Yellow border */
+    color: #ffc107; /* Yellow text */
     font-weight: bold;
-    color: #333;
+    padding: 8px 20px; /* Smaller size */
+    font-size: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
   }
-  /* Sliding Animation */
+  
+  /* Hover Effect */
+  .btn-custom:hover {
+    background: #ffc107; /* Yellow fill on hover */
+    color: #000; /* Text turns black */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.5); /* Glow effect */
+  }
+  
+  /* Click (Active) Effect */
+  .btn-custom:active {
+    transform: scale(0.95); /* Press effect */
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.4);
+  }
+  
+  /* Responsive Image Sizing */
+  @media (max-width: 768px) {
+    .clients-img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  
+  /* Keyframe Animation for Infinite Loop */
   @keyframes slide {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
-  }
-  /* Duplicate the track to ensure smooth sliding */
-  .slider-track::after {
-    content: "";
-    display: block;
   }
 }

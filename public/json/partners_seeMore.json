@@ -1,0 +1,25 @@
+{
+    "title": "Our Partners And Clients",
+    "partners": [
+      { "id": 1, "image": "images/partnersAndClient/1.png", "alt": "Partner 1" },
+      { "id": 2, "image": "images/partnersAndClient/2.png", "alt": "Partner 2" },
+      { "id": 3, "image": "images/partnersAndClient/3.png", "alt": "Partner 3" },
+      { "id": 4, "image": "images/partnersAndClient/4.png", "alt": "Partner 4" },
+      { "id": 5, "image": "images/partnersAndClient/5.png", "alt": "Partner 5" },
+      { "id": 6, "image": "images/partnersAndClient/6.png", "alt": "Partner 6" },
+      { "id": 7, "image": "images/partnersAndClient/7.png", "alt": "Partner 7" },
+      { "id": 8, "image": "images/partnersAndClient/8.png", "alt": "Partner 8" },
+      { "id": 9, "image": "images/partnersAndClient/9.png", "alt": "Partner 9" },
+      { "id": 10, "image": "images/partnersAndClient/10.png", "alt": "Partner 10" },
+      { "id": 11, "image": "images/partnersAndClient/11.png", "alt": "Partner 11" },
+      { "id": 12, "image": "images/partnersAndClient/12.png", "alt": "Partner 12" },
+      { "id": 13, "image": "images/partnersAndClient/13.png", "alt": "Partner 13" },
+      { "id": 14, "image": "images/partnersAndClient/14.png", "alt": "Partner 14" },
+      { "id": 15, "image": "images/partnersAndClient/15.png", "alt": "Partner 15" },
+      { "i": 16, "image": "images/partnersAndClient/16.png", "alt": "Partner 16" },
+      { "id": 17, "image": "images/partnersAndClient/17.png", "alt": "Partner 17" },
+      { "id": 18, "image": "images/partnersAndClient/18.png", "alt": "Partner 18" },
+      { "id": 19, "image": "images/partnersAndClient/19.png", "alt": "Partner 19" },
+      { "id": 20, "image": "images/partnersAndClient/20.png", "alt": "Partner 20" },
+      { "id": 21, "image": "images/partnersAndClient/21.png", "alt": "Partner 21" }
+    ]  }  

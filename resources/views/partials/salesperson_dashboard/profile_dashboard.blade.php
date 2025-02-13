@@ -5,7 +5,7 @@
             <!-- Title -->
             <h2 class="mb-4">User Profile</h2>
             <!-- Close Button to Redirect to Home Page -->
-            <a href="{{ route('home') }}" class="btn-close" aria-label="Close"></a>
+            <a href="{{ route('dashboard') }}" class="btn-close" aria-label="Close"></a>
         </div>
         <div class="row">
             <div class="col-md-4 text-center">

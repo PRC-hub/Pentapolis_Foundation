@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
-class ProfileController extends Controller
+class ProfileDashboardController extends Controller
 {
-    public function index()
+    public function dashboard()
     {
         $user = Auth::user();
-        return view('profile', compact('user'));
+        return view('profile_dashboard', compact('user'));
     }
 
     public function update(Request $request)
