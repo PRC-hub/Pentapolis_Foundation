@@ -19,7 +19,7 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-        @auth
+          @auth
             <li class="nav-item dropdown d-lg-none">
               <a class="nav-link dropdown-toggle" href="#" id="mobileProfileDropdown"
                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,9 +75,9 @@
         <!-- Desktop View Profile/Login -->
         <div class="d-none d-lg-flex align-items-center ms-lg-3">
           @auth
-            <div class="dropdown">
+            <div class="dropdown profile-dropdown">
               <button class="btn btn-outline-primary rounded-circle d-flex align-items-center justify-content-center profile-btn"
-                      type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      type="button" id="profileDropdown">
                 @if(auth()->user()->profile_picture)
                   <img src="{{ asset('storage/' . auth()->user()->profile_picture) }}"
                        alt="Profile Picture" class="rounded-circle" width="40" height="40">
@@ -85,7 +85,7 @@
                   <i class="fa fa-user"></i>
                 @endif
               </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+              <ul class="dropdown-menu dropdown-menu-end dropdown-profile" aria-labelledby="profileDropdown">
                 <li>
                   <a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user-circle"></i> Profile</a>
                 </li>
@@ -105,12 +105,9 @@
   </nav>
 </div>
 
-
-
-
 <!-- Custom JavaScript -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     // --- Mobile Hamburger Toggle ---
     var navbarNav     = document.getElementById("navbarNav");
     var navbarToggler = document.getElementById("navbar-toggler");
@@ -164,5 +161,17 @@
         }
       });
     }
+
+    // --- Profile Dropdown Hover Effect ---
+    var profileDropdown = document.querySelector(".profile-dropdown");
+    var dropdownMenu = profileDropdown.querySelector(".dropdown-menu");
+
+    profileDropdown.addEventListener("mouseenter", function () {
+      dropdownMenu.classList.add("show");
+    });
+
+    profileDropdown.addEventListener("mouseleave", function () {
+      dropdownMenu.classList.remove("show");
+    });
   });
 </script>

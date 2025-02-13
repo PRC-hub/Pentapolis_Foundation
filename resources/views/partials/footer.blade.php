@@ -50,7 +50,7 @@
                 <!-- Contact Info -->
                 <div class="col-md-4 mb-4">
                     <h1 class="footer-links">Contact</h1>
-                    <h2 class="footer-links">know more</h2>
+                    <h2 class="footer-links">know more...</h2>
                     <hr class="bg-warning mb-4" style="height: 2px;">
                     <p><i class="fas fa-home"></i> {{ $footerData['contact']['address'] }}</p>
                     <p><i class="fas fa-envelope"></i> {{ $footerData['contact']['email'] }}</p>
@@ -64,6 +64,7 @@
     <div class="footer-copyright text-center">
         <img src="{{ asset('images/footer/img1.png') }}" alt="Pentapolis Foundation" class="footer-logo-small" >
         <img src="{{ asset('images/footer/img2.png') }}" alt="Pentapolis Foundation" class="footer-logo-small" >
+        <hr>
         <p class="mb-0 mt-3">
             <h6>© 2024 Copyright:</h6>
             <a href="https://www.pentapolisfoundation.com">
