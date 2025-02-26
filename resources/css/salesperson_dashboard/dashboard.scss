@@ -175,7 +175,6 @@
     align-items: center;
     gap: 10px;
     background-color: white;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -262,10 +261,13 @@
       top: 60px;
       right: 20px;
       width: calc(100% - 40px);
-      z-index: 1000;
+      z-index: 100;
     }
     .search-box.active {
-      display: flex;
+      display: none;
+    }
+    .searchformobile{
+      display: none;
     }
   }
 }

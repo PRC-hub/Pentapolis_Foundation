@@ -6,6 +6,8 @@
     "/css/courses.css": "/css/courses.css",
     "/css/contactUs.css": "/css/contactUs.css",
     "/css/aboutUs.css": "/css/aboutUs.css",
+    "/css/salesperson_dashboard/updatePlan.css": "/css/salesperson_dashboard/updatePlan.css",
+    "/css/salesperson_dashboard/locationPhotos.css": "/css/salesperson_dashboard/locationPhotos.css",
     "/css/salesperson_dashboard/help.css": "/css/salesperson_dashboard/help.css",
     "/css/salesperson_dashboard/invoice.css": "/css/salesperson_dashboard/invoice.css",
     "/css/salesperson_dashboard/timesheet.css": "/css/salesperson_dashboard/timesheet.css",

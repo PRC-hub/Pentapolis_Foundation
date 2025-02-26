@@ -9,7 +9,7 @@
         <a href="/profile-Dashboard"><i class="fa-solid fa-user"></i> Profile</a>
         <a href="/task"><i class="fa-solid fa-list-check"></i> Task</a>
         <a href="/timesheet"><i class="fa-solid fa-hourglass-half"></i> Timesheet</a>
-        <a href="#"><i class="fa-solid fa-map-location-dot"></i> Geo Tracking</a>
+        <a href="/geolocation"><i class="fa-solid fa-map-location-dot"></i> Geo Tracking</a>
         <a href="/sales"><i class="fa-solid fa-pen-to-square"></i> Update Plan</a>
         <a href="/photos"><i class="fa-solid fa-images"></i> Upload Photo</a>
         <a href="/invoices"><i class="fa-solid fa-receipt"></i> Upload Invoice</a>
@@ -22,10 +22,10 @@
     <!-- Navbar -->
     <div class="navbar d-flex justify-content-between align-items-center">
         <div class="icons">
-            <button class="btn btn-light" onclick="toggleSearchBox()">
+            <button class="searchformobile btn btn-light" onclick="toggleSearchBox()">
                 <i class="fas fa-search" title="Search"></i>
             </button>
-            <a href="https://mail.google.com" class="btn btn-light"><i class="fas fa-envelope" title="Gmail"></i></a>
+            <a href="https://pentapolisfoundation.com/webmail" target="_blank" class="btn btn-light"><i class="fas fa-envelope" title="Gmail"></i></a>
             <button class="btn btn-light" onclick="toggleNotificationBox()">
                 <i class="fas fa-bell" title="Notification"></i>
             </button>
@@ -176,3 +176,50 @@
   </div>
 </div>
 
+<script> 
+
+// Function to toggle sidebar
+function toggleSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("show");
+}
+
+// Function to close sidebar on scroll
+function closeSidebarOnScroll() {
+  const sidebar = document.querySelector(".sidebar");
+  if (sidebar.classList.contains("show")) {
+    sidebar.classList.remove("show");
+  }
+}
+
+// Add scroll event listener to close sidebar
+window.addEventListener("scroll", closeSidebarOnScroll);
+
+// Function to toggle calendar box
+function toggleCalendarBox() {
+  const calendarBox = document.getElementById("calendarBox");
+  if (calendarBox.style.display === "none") {
+    calendarBox.style.display = "block";
+  } else {
+    calendarBox.style.display = "none";
+  }
+}
+
+// Function to toggle notification box
+function toggleNotificationBox() {
+  const notificationBox = document.getElementById("notificationBox");
+  notificationBox.style.display =
+    notificationBox.style.display === "none" ? "block" : "none";
+}
+
+// Function to toggle search box
+function toggleSearchBox() {
+  const searchBox = document.getElementById("searchBox");
+  if (window.innerWidth <= 768) {
+    searchBox.classList.toggle("active");
+  } else {
+    searchBox.style.display =
+      searchBox.style.display === "none" ? "flex" : "none";
+  }
+}
+</script>

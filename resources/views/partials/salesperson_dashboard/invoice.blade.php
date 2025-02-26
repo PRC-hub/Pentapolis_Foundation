@@ -1,11 +1,11 @@
  <div class ="global_dashboard_invoice">
- <div class="container">
-        <div class="text-center mb-5">
+ <div class="container my-5">
             <div class="back-navigation">
                 <a href="{{ route('dashboard') }}" class="back-button">
                     <i class="fa fa-arrow-left" aria-hidden="true"></i>Invoice System
                 </a>
             </div>
+        <div class="text-center mb-5">
             <h1 class="display-5">Invoice System</h1>
             <p class="text-muted">Review and manage invoices submitted by employees</p>
         </div>

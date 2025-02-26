@@ -1,0 +1,66 @@
+[
+    {
+        "name": "John Doe",
+        "lat": 28.7041,
+        "lon": 77.1025,
+        "team": "A",
+        "color": "red",
+        "active": true
+    },
+    {
+        "name": "Mike Johnson",
+        "lat": 12.9716,
+        "lon": 77.5946,
+        "team": "A",
+        "color": "green",
+        "active": false
+    },
+    {
+        "name": "Alice Smith",
+        "lat": 22.5726,
+        "lon": 88.3639,
+        "team": "A",
+        "color": "blue",
+        "active": true
+    },
+    {
+        "name": "Robert Brown",
+        "lat": 19.0760,
+        "lon": 72.8777,
+        "team": "A",
+        "color": "purple",
+        "active": false
+    },
+    {
+        "name": "Emma Wilson",
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "team": "A",
+        "color": "orange",
+        "active": true
+    },
+    {
+        "name": "David Miller",
+        "lat": 25.3176,
+        "lon": 82.9739,
+        "team": "A",
+        "color": "yellow",
+        "active": true
+    },
+    {
+        "name": "Sophia Anderson",
+        "lat": 18.5204,
+        "lon": 73.8567,
+        "team": "A",
+        "color": "pink",
+        "active": false
+    },
+    {
+        "name": "Liam Garcia",
+        "lat": 26.9124,
+        "lon": 75.7873,
+        "team": "A",
+        "color": "cyan",
+        "active": true
+    }
+]

@@ -32,6 +32,17 @@ use App\Http\Controllers\GeoTrackingController;
 use Illuminate\Support\Facades\Config;
 use App\Http\Controllers\Partners_SeeMoreController;
 use App\Http\Controllers\ProfileDashboardController;
+use App\Http\Controllers\SalespersonLocationController;
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/update-location', [SalespersonLocationController::class, 'updateLocation']);
+    Route::get('/get-locations', [SalespersonLocationController::class, 'getLocations']);
+});
+
+Route::get('/geolocation', function () {
+    return view('geolocation');
+})->middleware('auth');
+
 
 
 

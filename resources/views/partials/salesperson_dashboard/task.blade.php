@@ -6,12 +6,12 @@
         <i class="fa fa-arrow-left" aria-hidden="true"></i> Tasks & Targets
         </a>
     </div>
-    <div class="search-box" id="searchBox">
+    <!-- <div class="search-box" id="searchBox">
             <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()">
             <button class="btn btn-primary" onclick="performSearch()">
                 <i class="fas fa-search"></i>
             </button>
-        </div>
+        </div> -->
 
     <div class="task-section">
         <div class="task-header">Tasks & Targets</div>

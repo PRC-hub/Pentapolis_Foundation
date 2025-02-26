@@ -1,1 +1,173 @@
-(()=>{var e,o={49:()=>{},770:()=>{},926:()=>{},331:()=>{},30:()=>{},505:()=>{},253:()=>{},526:()=>{},567:()=>{},269:()=>{},91:()=>{},711:()=>{},978:()=>{},676:()=>{},143:()=>{},154:()=>{},530:()=>{},146:()=>{},322:()=>{},557:()=>{},391:()=>{},367:()=>{},74:()=>{},804:()=>{},244:()=>{},298:()=>{},777:()=>{},715:()=>{},595:()=>{},826:()=>{},923:()=>{},289:()=>{},402:()=>{function e(o){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(o)}console.log("JS file loaded"),console.log("undefined"==typeof Chart?"undefined":e(Chart));var o=document.getElementById("salesChart").getContext("2d");new Chart(o,{type:"bar",data:{labels:["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG"],datasets:[{label:"Target",data:[12,19,3,5,2,3,7,10],backgroundColor:"#6c5ce7"},{label:"Achieved",data:[2,3,20,5,1,4,9,12],backgroundColor:"#74b9ff"}]},options:{responsive:!0,plugins:{legend:{position:"top"}}}});var t=document.getElementById("trafficChart").getContext("2d");new Chart(t,{type:"doughnut",data:{labels:["Student Enrolled","Student not Enrolled"],datasets:[{data:[20,80],backgroundColor:["#74b9ff","#55efc4"]}]}});var n=document.getElementById("pieChart").getContext("2d");new Chart(n,{type:"pie",data:{labels:["Sector Engaged","Sector not Engaged"],datasets:[{data:[40,60],backgroundColor:["#74b9ff","#fd79a8"]}]}});var r=document.getElementById("funnelChart").getContext("2d");function a(e,o,t,n){var r=Math.abs(Math.floor(n/(t-o))),a=o,d=t>o?1:-1,i=setInterval((function(){a+=d,document.getElementById(e).textContent=a.toLocaleString()+"+",a===t&&clearInterval(i)}),r)}function d(e,o,t,n,r,a){var d=document.getElementById(e),i=(document.getElementById(o),t),l=n>t?1:-1,s=Math.abs(Math.floor(a/(n-t))),v=setInterval((function(){i+=l,d.style.width=i+"%",d.setAttribute("aria-valuenow",i),d.textContent=i+"%",i===n&&clearInterval(v)}),s)}new Chart(r,{type:"bar",data:{labels:["Prospecting","Qualified","Proposal","Negotiation","Closed Won","Closed Lost"],datasets:[{label:"Sales Funnel",data:[50,30,20,10,6,5],backgroundColor:["#00ff37bb","#55efc4","#fffb00b5","#ff9d00f5","#ff3e04be","#ff0000"]}]},options:{responsive:!0,indexAxis:"y",elements:{bar:{borderRadius:10,borderSkipped:"bottom"}},scales:{x:{beginAtZero:!0}}}}),a("weeklySales",0,65,1e3),a("weeklyOrders",0,160,1e3),a("visitorsOnline",0,250,1e3),d("completionProgress","progressText",0,85,0,1500),d("completionProgres","progressTex",0,25,0,1500),window.addEventListener("scroll",(function(){var e=document.querySelector(".sidebar");e.classList.contains("show")&&e.classList.remove("show")}))}},t={};function n(e){var r=t[e];if(void 0!==r)return r.exports;var a=t[e]={exports:{}};return o[e](a,a.exports,n),a.exports}n.m=o,e=[],n.O=(o,t,r,a)=>{if(!t){var d=1/0;for(v=0;v<e.length;v++){for(var[t,r,a]=e[v],i=!0,l=0;l<t.length;l++)(!1&a||d>=a)&&Object.keys(n.O).every((e=>n.O[e](t[l])))?t.splice(l--,1):(i=!1,a<d&&(d=a));if(i){e.splice(v--,1);var s=r();void 0!==s&&(o=s)}}return o}a=a||0;for(var v=e.length;v>0&&e[v-1][2]>a;v--)e[v]=e[v-1];e[v]=[t,r,a]},n.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o),(()=>{var e={748:0,376:0,479:0,129:0,801:0,226:0,826:0,943:0,451:0,170:0,581:0,246:0,367:0,187:0,40:0,659:0,928:0,731:0,186:0,766:0,598:0,473:0,813:0,858:0,217:0,739:0,589:0,860:0,954:0,510:0,128:0,39:0,699:0};n.O.j=o=>0===e[o];var o=(o,t)=>{var r,a,[d,i,l]=t,s=0;if(d.some((o=>0!==e[o]))){for(r in i)n.o(i,r)&&(n.m[r]=i[r]);if(l)var v=l(n)}for(o&&o(t);s<d.length;s++)a=d[s],n.o(e,a)&&e[a]&&e[a][0](),e[a]=0;return n.O(v)},t=self.webpackChunk=self.webpackChunk||[];t.forEach(o.bind(null,0)),t.push=o.bind(null,t.push.bind(t))})(),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(402))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(715))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(595))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(826))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(923))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(289))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(49))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(770))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(926))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(331))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(30))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(505))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(253))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(526))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(567))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(269))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(91))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(711))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(978))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(676))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(143))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(154))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(530))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(146))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(322))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(557))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(391))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(367))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(74))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(804))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(244))),n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(298)));var r=n.O(void 0,[376,479,129,801,226,826,943,451,170,581,246,367,187,40,659,928,731,186,766,598,473,813,858,217,739,589,860,954,510,128,39,699],(()=>n(777)));r=n.O(r)})();
+// Initialize Charts
+const salesChartCtx = document.getElementById("salesChart").getContext("2d");
+new Chart(salesChartCtx, {
+  type: "bar",
+  data: {
+    labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG"],
+    datasets: [
+      {
+        label: "Target",
+        data: [12, 19, 3, 5, 2, 3, 7, 10],
+        backgroundColor: "#6c5ce7",
+      },
+      {
+        label: "Achieved",
+        data: [2, 3, 20, 5, 1, 4, 9, 12],
+        backgroundColor: "#74b9ff",
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+    },
+  },
+});
+
+const trafficChartCtx = document
+  .getElementById("trafficChart")
+  .getContext("2d");
+new Chart(trafficChartCtx, {
+  type: "doughnut",
+  data: {
+    labels: ["Student Enrolled", "Student not Enrolled"],
+    datasets: [
+      {
+        data: [20, 80],
+        backgroundColor: ["#74b9ff", "#55efc4"],
+      },
+    ],
+  },
+});
+
+const pieChartCtx = document.getElementById("pieChart").getContext("2d");
+new Chart(pieChartCtx, {
+  type: "pie",
+  data: {
+    labels: ["Sector Engaged", "Sector not Engaged"],
+    datasets: [
+      {
+        data: [40, 60],
+        backgroundColor: ["#74b9ff", "#fd79a8"],
+      },
+    ],
+  },
+});
+
+const funnelChartCtx = document.getElementById("funnelChart").getContext("2d");
+new Chart(funnelChartCtx, {
+  type: "bar",
+  data: {
+    labels: [
+      "Prospecting",
+      "Qualified",
+      "Proposal",
+      "Negotiation",
+      "Closed Won",
+      "Closed Lost",
+    ],
+    datasets: [
+      {
+        label: "Sales Funnel",
+        data: [50, 30, 20, 10, 6, 5],
+        backgroundColor: [
+          "#00ff37bb",
+          "#55efc4",
+          "#fffb00b5",
+          "#ff9d00f5",
+          "#ff3e04be",
+          "#ff0000",
+        ],
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    indexAxis: "y",
+    elements: {
+      bar: {
+        borderRadius: 10,
+        borderSkipped: "bottom",
+      },
+    },
+    scales: {
+      x: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
+
+// Function to animate numbers
+function animateNumbers(id, start, end, duration) {
+  const stepTime = Math.abs(Math.floor(duration / (end - start)));
+  let current = start;
+  const increment = end > start ? 1 : -1;
+  const timer = setInterval(() => {
+    current += increment;
+    document.getElementById(id).textContent = current.toLocaleString() + "+";
+    if (current === end) clearInterval(timer);
+  }, stepTime);
+}
+
+// Animate the numbers in the cards
+animateNumbers("weeklySales", 0, 65, 1000);
+animateNumbers("weeklyOrders", 0, 160, 1000);
+animateNumbers("visitorsOnline", 0, 250, 1000);
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  const darkModeButton = document.querySelector(".dark-mode-toggle button");
+  if (document.body.classList.contains("dark-mode")) {
+    darkModeButton.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+    Chart.defaults.color = "#ffffff";
+  } else {
+    darkModeButton.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+    Chart.defaults.color = "#000000";
+  }
+  // Update all charts to reflect dark mode changes
+  Chart.helpers.each(Chart.instances, function (chart) {
+    chart.options.plugins.legend.labels.color = Chart.defaults.color;
+    chart.options.scales.x.ticks.color = Chart.defaults.color;
+    chart.options.scales.y.ticks.color = Chart.defaults.color;
+    chart.update();
+  });
+}
+
+// Function to animate progress bars
+function animateProgressBar(id, textId, start, end, total, duration) {
+  let progressBar = document.getElementById(id);
+  let progressText = document.getElementById(textId);
+  let current = start;
+  let increment = end > start ? 1 : -1;
+  let stepTime = Math.abs(Math.floor(duration / (end - start)));
+  let timer = setInterval(() => {
+    current += increment;
+    progressBar.style.width = current + "%";
+    progressBar.setAttribute("aria-valuenow", current);
+    progressBar.textContent = current + "%";
+    if (current === end) clearInterval(timer);
+  }, stepTime);
+}
+
+// Animate progress bars
+animateProgressBar("completionProgress", "progressText", 0, 85, 100, 1500);
+animateProgressBar("completionProgres", "progressTex", 0, 25, 100, 1500);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

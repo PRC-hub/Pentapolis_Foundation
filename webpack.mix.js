@@ -34,6 +34,8 @@ mix.sass('resources/css/feature.scss', 'public/css')
     .sass('resources/css/salesperson_dashboard/timesheet.scss','public/css/salesperson_dashboard')
     .sass('resources/css/salesperson_dashboard/invoice.scss','public/css/salesperson_dashboard')
     .sass('resources/css/salesperson_dashboard/help.scss','public/css/salesperson_dashboard')
+    .sass('resources/css/salesperson_dashboard/locationPhotos.scss','public/css/salesperson_dashboard')
+    .sass('resources/css/salesperson_dashboard/updatePlan.scss','public/css/salesperson_dashboard')
     .js('resources/js/salesperson_dashboard.js','public/js')
 
     .setPublicPath('public');

@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Sales Plan</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-</head>
-<body>
+<div class="globla_salesperson_updatePlan">
     <div class="container mt-5">
+    <div class="back-navigation">
+        <a href="{{ route('dashboard') }}" class="back-button">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i> Update Plan
+        </a>
+    </div>
+        
         <h1 class="text-center mb-4">Update Sales Plan</h1>
 
         <!-- Input Form -->
@@ -31,6 +27,7 @@
             @endforeach
         </div>
     </div>
+</div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
@@ -88,5 +85,4 @@
             }
         });
     </script>
-</body>
-</html>
+

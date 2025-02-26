@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pentapolis Foundation</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ mix('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ mix('css/login.css') }}">
@@ -40,12 +41,18 @@
     <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/invoice.css') }}">
     <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/task.css') }}">
     <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/timesheet.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/locationPhotos.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/updatePlan.css') }}">
+
   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <style>
-  body{scroll-behavior: smooth;overflow-x: hidden;}
+  body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
 </style>
 <body>
      @yield('content')
@@ -53,11 +60,11 @@
      <script src="{{mix('js/salesperson_dashboard.js')}}"></script>
      <script src="{{asset('js/monetary.js')}}"></script>
 
+
      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2025/01/31/18/20250131182433-FNPPDA8S.js"></script>
    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
