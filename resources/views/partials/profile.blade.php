@@ -29,7 +29,7 @@
                     </tr>
                     <tr>
                         <th>User Type:</th>
-                        <td>{{ $user->user_type ?? 'Not Set' }}</td>
+                        <td>{{ Auth::user()->user_type }}</td>
                     </tr>
                     <tr>
                         <th>Account Created:</th>
@@ -41,10 +41,15 @@
                     Edit Profile
                 </button>
                 <!-- Logout Form -->
+                @if(Auth::check())
+                <a href="{{ route('logout') }}"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-inline">
                     @csrf
-                    <button type="submit" class="btn btn-danger">Logout</button>
                 </form>
+                @endif
             </div>
         </div>
     </div>

@@ -44,37 +44,46 @@
     <!-- Main Content -->
     <div class="content">
         <div class="row mb-4">
-            <div class="col-md-4 col-12">
-                <div class="card text-white bg-gradient-danger">
-                    <div class="card-body">
-                        <h5>Current Target</h5>
-                        <h3 class="number" id="weeklySales">0<span>+</span></h3>
-                        <p>Agriculture: {{ $dashboardData['dashboard']['currentTarget']['agriculture'] }}/100</p>
-                        <p>Medical: {{ $dashboardData['dashboard']['currentTarget']['medical'] }}/50</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="card text-white bg-gradient-primary">
-                    <div class="card-body">
-                        <h5>Previous Target</h5>
-                        <h3 class="number" id="weeklyOrders">0<span>+</span></h3>
-                        <p>Agriculture: {{ $dashboardData['dashboard']['previousTarget']['agriculture'] }}/100</p>
-                        <p>Medical: {{ $dashboardData['dashboard']['previousTarget']['medical'] }}/100</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="card text-white bg-gradient-success">
-                    <div class="card-body">
-                        <h5>Overall Target Achieved</h5>
-                        <h3 class="number" id="visitorsOnline">0<span>+</span></h3>
-                        <p>Agriculture: {{ $dashboardData['dashboard']['overallTarget']['agriculture'] }}/200</p>
-                        <p>Medical: {{ $dashboardData['dashboard']['overallTarget']['medical'] }}/150</p>
-                    </div>
-                </div>
+    @php
+        function getKpiClass($achieved, $target) {
+            $percentage = $target > 0 ? ($achieved / $target) * 100 : 0;
+            return $percentage >= 90 ? 'bg-gradient-success' : ($percentage >= 70 ? 'bg-gradient-warning' : 'bg-gradient-danger');
+        }
+    @endphp
+
+    <div class="col-md-4 col-12">
+        <div class="card text-white {{ getKpiClass($dashboardData['dashboard']['currentTarget']['agriculture'], 100) }}">
+            <div class="card-body">
+                <h5>Current Target</h5>
+                <h3 class="number">{{ $dashboardData['dashboard']['currentTarget']['agriculture'] }}<span>+</span></h3>
+                <p>Agriculture: {{ $dashboardData['dashboard']['currentTarget']['agriculture'] }}/100</p>
+                
             </div>
         </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div class="card text-white {{ getKpiClass($dashboardData['dashboard']['previousTarget']['agriculture'], 100) }}">
+            <div class="card-body">
+                <h5>Previous Target</h5>
+                <h3 class="number">{{ $dashboardData['dashboard']['previousTarget']['agriculture'] }}<span>+</span></h3>
+                <p>Agriculture: {{ $dashboardData['dashboard']['previousTarget']['agriculture'] }}/100</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-12">
+        <div class="card text-white {{ getKpiClass($dashboardData['dashboard']['overallTarget']['agriculture'], 100) }}">
+            <div class="card-body">
+                <h5>Overall Target Achieved</h5>
+                <h3 class="number">{{ $dashboardData['dashboard']['overallTarget']['agriculture'] }}<span>+</span></h3>
+                <p>Agriculture: {{ $dashboardData['dashboard']['overallTarget']['agriculture'] }}/100</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+         <!-- Card section Ending-->
 
         <div class="row">
             <div class="col-md-6 col-12">

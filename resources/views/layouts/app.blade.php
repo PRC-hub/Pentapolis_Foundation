@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="{{ mix('css/volunteer.css') }}">
     <link rel="stylesheet" href="{{ mix('css/blog.css') }}">
     <link rel="stylesheet" href="{{ mix('css/terms.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/gallery.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/loadmore.css') }}">
     <link rel="stylesheet" href="{{ mix('css/partners_seeMore.css') }}">
     <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/dashboard.css') }}">
     <link rel="stylesheet" href="{{ mix('css/salesperson_dashboard/help.css') }}">

@@ -45,7 +45,10 @@ class HomeController extends Controller
         $successPath = public_path('json/success.json');
         $success = file_exists($successPath) ? json_decode(file_get_contents($successPath), true):['success'];
 
+        $jsonPath = public_path('json/gallery.json'); // Path to JSON file
+        $gallery = json_decode(file_get_contents($jsonPath), true);
+        $images = array_slice($gallery, 0, 6);
 
-        return view('home', compact('header','featureSection','capacityBuildingData','donationData','overviewData','partnerData','footerData', 'sections', 'achievements','courses','config','success'));
+        return view('home', compact('header','images','featureSection','capacityBuildingData','donationData','overviewData','partnerData','footerData', 'sections', 'achievements','courses','config','success'));
     }
 }

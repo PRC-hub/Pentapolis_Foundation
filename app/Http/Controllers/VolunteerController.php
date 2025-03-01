@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Volunteer;
 
 class VolunteerController extends Controller
 {
@@ -29,7 +30,7 @@ class VolunteerController extends Controller
             'phone_number' => 'required|string|max:15',
         ]);
 
-
+        Volunteer::create($request->all());
 
         return redirect()->back()->with('success', 'Your application has been submitted successfully!');
     }

@@ -9,9 +9,9 @@
     <div class="mb-2">
         <select class="form-control" name="user_type" id="user-type" required>
             <option value="">Select User Type</option>
-            <option value="Admin">Admin</option>
+            <!-- <option value="Admin">Admin</option> -->
             <option value="Student">Student</option>
-            <option value="Employee">Employee</option>
+            <!-- <option value="Employee">Employee</option> -->
             <option value="Trainer">Trainer</option>
             <option value="Customer">Customer</option>
         </select>

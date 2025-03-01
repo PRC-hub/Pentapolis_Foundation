@@ -127,6 +127,10 @@
   .dropdown-menu {
     display: none;
   }
+  .headerlogo img {
+    margin-left: -25px;
+    max-height: 35px; /* Ensures the logo doesn’t grow too large */
+  }
   .dropdown-menu.show {
     display: block;
   }
@@ -144,13 +148,37 @@
   }
   .navbar-toggler {
     margin-right: 10px;
+    position: relative; /* Ensures it stays aligned */
   }
   .loginbtn {
-    margin-left:40px;
+    margin-left: 40px;
     margin-bottom: 9px;
   }
-  .profile-btn{
-    display: none !important ;
+  .profile-btn {
+    display: none !important;
+  }
+
+  /* Fix alignment issue for small screens */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds small spacing between logo and text */
+    white-space: nowrap; /* Prevents wrapping */
+  }
+  .navbar-toggler {
+    margin-left: auto; /* Pushes the hamburger to the right */
   }
 }
+
+@media (max-width: 381px){
+  .headerlogo img {
+    margin-left: -25px;
+    max-height: 30px;
+    max-width: 30px;
+  }
+  .headerlogo span{
+    font-size: medium;
+  }
+}
+
 }

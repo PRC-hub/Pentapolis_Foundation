@@ -29,12 +29,15 @@
                 <li>
                   <a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user-circle"></i> Profile</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
-                </li>
+                @if(auth()->user()->user_type === 'Employee')
+                  <li>
+                    <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                  </li>
+                @endif
               </ul>
             </li>
           @endauth
+
           @foreach ($header['header']['navMenu'] as $menu)
             @if (isset($menu['dropdown']))
               <!-- Dropdown Menu -->
@@ -62,8 +65,9 @@
               </li>
             @endif
           @endforeach
+          
           @auth
-          <li class="nav-item d-lg-none">
+            <li class="nav-item d-lg-none">
               <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <button type="submit" class="nav-link btn btn-link"><i class="fa fa-sign-out-alt"></i> Logout</button>
@@ -89,9 +93,11 @@
                 <li>
                   <a class="dropdown-item" href="{{ route('profile') }}"><i class="fa fa-user-circle"></i> Profile</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
-                </li>          
+                @if(auth()->user()->user_type === 'Employee')
+                  <li>
+                    <a class="dropdown-item" href="{{ route('dashboard') }}"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                  </li>
+                @endif
               </ul>
             </div>
           @else

@@ -1,34 +1,22 @@
 <?php
 
-namespace App\Http\Controllers;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
-use Illuminate\Http\Request;
-use App\Models\SalespersonLocation;
-use App\Events\LocationUpdated;
-use Auth;
-
-class SalespersonLocationController extends Controller
-{
-    public function updateLocation(Request $request)
-    {
-        $request->validate([
-            'latitude' => 'required|numeric',
-            'longitude' => 'required|numeric',
-        ]);
-
-        $location = SalespersonLocation::updateOrCreate(
-            ['user_id' => Auth::id()],
-            ['latitude' => $request->latitude, 'longitude' => $request->longitude]
-        );
-
-        broadcast(new LocationUpdated($location))->toOthers();
-
-        return response()->json(['message' => 'Location updated successfully']);
+return new class extends Migration {
+    public function up() {
+        Schema::create('salesperson_locations', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->decimal('latitude', 10, 7);
+            $table->decimal('longitude', 10, 7);
+            $table->timestamps();
+        });
     }
 
-    public function getLocations()
-    {
-        return response()->json(SalespersonLocation::with('user')->get());
+    public function down() {
+        Schema::dropIfExists('salesperson_locations');
     }
-}
+};
 

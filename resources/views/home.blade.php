@@ -11,6 +11,7 @@
     @include('partials.partners_clients_section', ['partnerData' => $partnerData])
     @include('partials.capacity_building_section', ['capacityBuildingData' => $capacityBuildingData])
     @include('partials.success',['success' => $success])
+    @include('partials.gallery',['images'=> $images])
     @include('partials.donation_section', ['donationData' => $donationData])
     @include('partials.footer', ['footerData' => $footerData])
 

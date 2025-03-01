@@ -13,6 +13,9 @@ class SignUpController extends Controller
     // Display the signup page
     public function show()
     {
+        if(auth()->check()){
+            return redirect()->route('dashboard');
+        }
         // Load the JSON file
         $signUpJson = public_path('json/signup.json');
         $signUpData = json_decode(file_get_contents($signUpJson), true);
@@ -26,7 +29,7 @@ class SignUpController extends Controller
     {
         // Validate the form data
         $validator = Validator::make($request->all(), [
-            'user_type' => 'required|string|in:Student,Employee,Customer,Admin,Trainer',
+            'user_type' => 'required|string|in:Student,Customer,Trainer',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6|confirmed',
             'otp' => 'required|digits:6',

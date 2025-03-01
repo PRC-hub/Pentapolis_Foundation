@@ -1,17 +1,14 @@
 {
     "dashboard": {
       "currentTarget": {
-        "agriculture": 60,
-        "medical": 5
+        "agriculture": 90
       },
       "previousTarget": {
-        "agriculture": 60,
-        "medical": 100
+        "agriculture": 80      
       },
       "overallTarget": {
-        "agriculture": 120,
-        "medical": 105
-      },
+        "agriculture": 80    
+        },
       "salesStatistics": {
         "labels": ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG"],
         "target": [12, 19, 3, 5, 2, 3, 7, 10],
